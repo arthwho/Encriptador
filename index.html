@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="img/codebox-logo.ico">
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <img src="img/codebox-logomarca.svg" id="nav-logo" onclick="reloadPage()">
+        <div class="nav-btn">
+          <img src="img/moon.png" class="mode-btn" onclick="darkMode()">
+          <img src="img/united-states.png" class="lang-btn">
+        </div>
+        </nav>
+    </header>
+
+    <main>
+      <section class="texto-box">
+        <textarea class="input-texto" rows="6" placeholder="Digite sua mensagem secreta" required></textarea>
+        <label id="aviso-texto" for="input-texto">Apenas letras minúsculas e sem acento.</label>
+        <div class="botoes">
+            <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+            <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+        </div>
+      </section>
+
+      <section class="mensagem-box">
+        <textarea class="mensagem" id="mensagem" readonly rows="15" placeholder="Sua mensagem aparecerá aqui"></textarea>
+        <button class="copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+    <footer>As funções do Modo Escuro e a mudança de idioma ainda não foram concluídas. Ícones de <a href="https://www.flaticon.com/free-icons/moon" target="_blank">Flaticon</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
