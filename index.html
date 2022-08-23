@@ -22,19 +22,20 @@
     <main>
       <section class="texto-box">
         <textarea class="input-texto" rows="6" placeholder="Digite sua mensagem secreta" required></textarea>
-        <label id="aviso-texto" for="input-texto">Apenas letras minúsculas e sem acento.</label>
+        <label id="aviso-texto" for="input-texto">&#128712; Apenas letras minúsculas e sem acento.</label>
         <div class="botoes">
             <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
             <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
         </div>
       </section>
-
+      
       <section class="mensagem-box">
         <textarea class="mensagem" id="mensagem" readonly rows="15" placeholder="Sua mensagem aparecerá aqui"></textarea>
         <button class="copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
       </section>
     </main>
-    <footer>As funções do Modo Escuro e a mudança de idioma ainda não foram concluídas. Ícones de <a href="https://www.flaticon.com/free-icons/moon" target="_blank">Flaticon</a></footer>
+    <div id="desaparece"><img src="img/undraw_not_found_3r9r.png"></div>
+    <footer>As funções do Modo Escuro e a mudança de idioma ainda não foram concluídas. Ícones de <a href="https://www.flaticon.com/free-icons/moon" target="_blank">Flaticon</a> e Imagem de <a href="https://undraw.co/">Undraw</a></footer>
     <script src="script.js"></script>
   </body>
 </html>

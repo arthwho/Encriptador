@@ -218,6 +218,13 @@ main{
     margin: 20px 27px;
   }
 
+  #desaparece img{
+    position: absolute;
+    width: 150px;
+    top: 250px;
+    right: 199px;
+  }
+
   footer{
     background: #252422;
     color: #FFFCF2;

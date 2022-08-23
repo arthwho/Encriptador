@@ -12,7 +12,6 @@ function copiar(){
 function btnEncriptar(){
     const textoEncriptado = encriptar(inputTexto.value)
     mensagem.value = textoEncriptado
-    //document.style.backgroundImage = "none"
     inputVerifica();
 }
 
@@ -52,6 +51,7 @@ function inputVerifica(){
     }
     else{
         aviso.style.color = 'black';
+        document.getElementById("desaparece").style.display = 'none';
         return true;
     }
 }
