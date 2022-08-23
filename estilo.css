@@ -315,12 +315,14 @@ main{
     }
     
     .mensagem{
-        position: static;
+        position: relative;
+        float: left;
         resize: none;
         border: none;
         background-color: transparent;
         font-size: 2em;
         color: #FFFCF2;
+        left: -150px;
     }
     
     #btn-copiar{
@@ -354,6 +356,10 @@ main{
         border-color: #FFFCF2;
         color: #FFFCF2;
       }
+
+      .botoes{
+        text-align: center;
+      }
     
     .encriptar {
         display: inline-flex;
@@ -361,7 +367,7 @@ main{
         align-items: flex-start;
         padding: 24px;
         position: static;
-        width: 300px;
+        width: 30%;
         height: 67px;
         left: 0px;
         top: 0px;
@@ -371,11 +377,10 @@ main{
         flex: none;
         order: 0;
         flex-grow: 0;
-        margin: 0px 40px;
         flex-grow: 0;
         color: #FFFCF2;
         font-weight: 500;
-        font-size: 28px;
+        font-size: 25px;
         line-height: 19px;
         justify-content: center; 
       }
@@ -392,10 +397,7 @@ main{
         align-items: flex-start;
         padding: 24px;
         position: static;
-        width: 300px;
-        height: 67px;
-        left: 352px;
-        top: 0px;
+        width: 40%;
         background: #FFFCF2;
         border: none;
         box-sizing: border-box;
@@ -403,10 +405,9 @@ main{
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 0px 10px;
         color: #252422;
         font-weight: 500;
-        font-size: 28px;
+        font-size: 25px;
         line-height: 19px;
         justify-content: center;
       }
@@ -429,6 +430,11 @@ main{
         bottom: -200px;
         width: 100%;
         padding: 5px 15px;
+      }
+      #desaparece img{
+        top: 740px;
+        left: 160px;
+        margin: auto;
       }
 
 
@@ -505,12 +511,14 @@ main{
 }
 
 .mensagem{
-    position: static;
+    position: relative;
+    float: left;
     resize: none;
     border: none;
     background-color: transparent;
     font-size: 2em;
     color: #FFFCF2;
+    left: -150px;
 }
 
 #btn-copiar{
@@ -545,13 +553,18 @@ main{
     color: #FFFCF2;
   }
 
+  .botoes{
+    text-align: center;
+    margin: 0px 10%;
+  }
+
 .encriptar {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     position: static;
-    width: 300px;
+    width: 100%;
     height: 67px;
     left: 0px;
     top: 0px;
@@ -561,8 +574,7 @@ main{
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 40px;
-    flex-grow: 0;
+    margin: 0px;
     color: #FFFCF2;
     font-weight: 500;
     font-size: 28px;
@@ -582,7 +594,7 @@ main{
     align-items: flex-start;
     padding: 24px;
     position: static;
-    width: 300px;
+    width: 100%;
     height: 67px;
     left: 352px;
     top: 0px;
@@ -593,7 +605,7 @@ main{
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 40px;
+    margin: 0px;
     color: #252422;
     font-weight: 500;
     font-size: 28px;
@@ -619,5 +631,11 @@ main{
     bottom: -200px;
     width: 100%;
     padding: 5px 15px;
+  }
+
+  #desaparece img{
+    top: 740px;
+    left: 160px;
+    margin: auto;
   }
   }

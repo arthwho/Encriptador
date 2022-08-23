@@ -6,6 +6,7 @@ function copiar(){
     copyText = document.getElementById("mensagem");
     copyText.select();
     navigator.clipboard.writeText(copyText.value);
+    inputTexto.value = "";
 }
 
 
