@@ -11,9 +11,11 @@
   <body>
     <header>
         <nav>
-          <img src="img/codebox-logomarca.svg" id="nav-logo" onclick="reloadPage()">
+          <img src="img/codebox-logomarca.svg" class="nav-logo" id="logo-preto" onclick="reloadPage()">
+          <img src="img/codebox-logomarca-bege.svg" class="nav-logo" id="logo-bege" onclick="reloadPage()">
         <div class="nav-btn">
-          <img src="img/moon.png" class="mode-btn" onclick="darkMode()">
+          <img src="img/moon.png" id="lua" class="mode-btn" onclick="darkMode()">
+          <img src="img/sun.png" id="sol" class="mode-btn" onclick="lightMode()">
           <img src="img/united-states.png" class="lang-btn">
         </div>
         </nav>
@@ -32,7 +34,9 @@
       <section class="mensagem-box">
         <div id="desaparece">
           <p>Nenhuma mensagem confidencial ainda <span></span></p>
-          <img src="img/undraw_not_found_3r9r.png"></div>
+          <img src="img/undraw_not_found_3r9r.png" class="img-desaparece" id="img-claro">
+          <img src="img/nada-escuro.png" class="img-desaparece" id="img-escuro">
+        </div>
         
         <div id="aparece">
           <textarea class="mensagem" id="mensagem" readonly rows="9" placeholder="Sua mensagem aparecerá aqui"></textarea>
@@ -41,7 +45,7 @@
       </section>
     </main>
     
-    <footer>As funções do Modo Escuro e a mudança de idioma ainda não foram concluídas. Ícones de <a href="https://www.flaticon.com" target="_blank">Flaticon</a> e Imagem de <a href="https://undraw.co/" target="_blank">Undraw</a></footer>
+    <footer>A função de mudança de idioma ainda não foi concluída. Ícones de <a href="https://www.flaticon.com" target="_blank">Flaticon</a> e Imagem de <a href="https://undraw.co/" target="_blank">Undraw</a></footer>
     <script src="script.js"></script>
   </body>
 </html>

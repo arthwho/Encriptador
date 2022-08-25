@@ -3,6 +3,9 @@ const mensagem = document.querySelector(".mensagem");
 const aviso = document.querySelector("#aviso-texto");
 
 document.getElementById("aparece").style.display = 'none';
+document.getElementById("sol").style.display = 'none';
+document.getElementById("logo-bege").style.display = 'none';
+document.getElementById("img-escuro").style.display = 'none';
 
 function copiar(){
     copyText = document.getElementById("mensagem");
@@ -63,6 +66,23 @@ function inputVerifica(){
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    document.getElementById("lua").style.display = 'none';
+    document.getElementById("sol").style.display = 'inline-block';
+    document.getElementById("logo-preto").style.display = 'none';
+    document.getElementById("logo-bege").style.display = 'flex';
+    document.getElementById("img-claro").style.display = 'none';
+    document.getElementById("img-escuro").style.display = '';
+ }
+
+ function lightMode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    document.getElementById("lua").style.display = 'inline-block';
+    document.getElementById("sol").style.display = 'none';
+    document.getElementById("logo-preto").style.display = 'flex';
+    document.getElementById("logo-bege").style.display = 'none';
+    document.getElementById("img-escuro").style.display = 'none';
+    document.getElementById("img-claro").style.display = '';
  }
 
  function reloadPage(){

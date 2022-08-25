@@ -26,7 +26,7 @@ header{
     overflow: hidden;
 }
 
-#nav-logo{
+.nav-logo{
     width: 140px;
     cursor: pointer;
 }
@@ -96,7 +96,7 @@ main{
     border-radius: 20px;
     height: 400px;
     padding: 30px;
-    box-shadow: 0px 0px 20px;
+    box-shadow: 0px 0px 20px #000000;
 }
 
 .mensagem{
@@ -219,7 +219,6 @@ main{
   label{
     display: inline-block;
     margin: 20px 27px;
-    text-shadow: 0 0 1px black;
   }
 
   #desaparece{
@@ -250,7 +249,7 @@ main{
     }
 }
 
-  #desaparece img{
+  #desaparece .img-desaparece{
     width: 200px;
     margin-top: 60px;
   }
@@ -272,8 +271,35 @@ main{
     DARK MODE
   */
   .dark-mode {
-    background-color: black;
+    background-color: #252422;
     color: white;
+  }
+
+  .dark-mode .input-texto, .dark-mode .input-texto::placeholder, .dark-mode label{
+    color: #FFFCF2;
+  }
+  .dark-mode .mensagem, .dark-mode p{
+    color: #252422;
+  }
+  .dark-mode .mensagem-box{
+    background: #CCC5B9;
+    color: #252422;
+  }
+  .dark-mode .encriptar{
+    background: #FFFCF2;
+    color: #252422;
+  }
+  .dark-mode .encriptar:hover, .dark-mode .desencriptar:hover{
+    background: #EB5E28;
+  }
+  .dark-mode #btn-copiar:hover{
+    background: #CCC5B9;
+    color: #252422;
+  }
+  .dark-mode footer{
+    background: #CCC5B9;
+    color: #252422;
+    font-weight: 600;
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1300px){
