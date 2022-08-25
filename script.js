@@ -36,6 +36,7 @@ function encriptar(stringEncriptada){
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(inputTexto.value)
     mensagem.value = textoDesencriptado;
+    inputVerifica();
 }
 
 function desencriptar(stringDesencriptada){
@@ -52,11 +53,11 @@ function desencriptar(stringDesencriptada){
 
 function inputVerifica(){
     if(inputTexto.value.trim() == ''){
-        aviso.style.color = 'red';s
+        aviso.style.color = 'red';
         return false;
     }
     else{
-        aviso.style.color = 'black';
+        aviso.style.color = '';
         document.getElementById("desaparece").style.display = 'none';
         document.getElementById("aparece").style.display = 'block';
         return true;
@@ -83,6 +84,7 @@ function darkMode() {
     document.getElementById("logo-bege").style.display = 'none';
     document.getElementById("img-escuro").style.display = 'none';
     document.getElementById("img-claro").style.display = '';
+    
  }
 
  function reloadPage(){

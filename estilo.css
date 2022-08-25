@@ -47,30 +47,22 @@ nav{
     cursor: pointer;
 }
 
-.lang-btn{
-    display: inline-block;
-    width: 50px;
-    cursor: pointer;
-}
-
 main{
     width: 100%;
     padding: 0px 10%;
-    overflow: hidden;
-    margin-top: 2%;
+    margin: 5% 0;
 }
 
 .texto-box{
     display:inline-block;
-    padding-top: 40px;
+    padding-top: 30px;
     height: 400px;
     border-radius: 20px;
     width: 75%;
 }
 
 .input-texto{
-    float: left;
-    width: 70%;
+    width: 100%;
     resize: none;
     border: none;
     font-size: 2em;
@@ -83,14 +75,13 @@ main{
     color: #252422;
 }
 
-    .input-texto:focus { 
-        border: none;
-        outline: none;
-       }
+.input-texto:focus { 
+    border: none;
+    outline: none;
+}
 
 .mensagem-box{
     float: right;
-    margin-top: 20px;
     background-color: #252422;
     width: 25%;
     border-radius: 20px;
@@ -257,22 +248,36 @@ main{
   footer{
     background: #252422;
     color: #FFFCF2;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    display: inline-block;
     width: 100%;
-    padding: 5px 15px;
+    bottom: 0px;
+  }
+
+  .footer-logo{
+    margin: 0px 5px;
+    margin-bottom: 5px;
+    transition: 200ms all;
+  }
+
+  .footer-logo:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
   }
 
   footer a{
     color: #EB5E28;
   }
 
-/**
-    DARK MODE
-  */
+  .footer-escuro{
+    display: none;
+  }
+
+/***  MODO ESCURO  ***/
   .dark-mode {
     background-color: #252422;
-    color: white;
+    color: #FFFCF2;
   }
 
   .dark-mode .input-texto, .dark-mode .input-texto::placeholder, .dark-mode label{
@@ -286,21 +291,22 @@ main{
     color: #252422;
   }
   .dark-mode .encriptar{
-    background: #FFFCF2;
+    background: #CCC5B9;
     color: #252422;
   }
   .dark-mode .encriptar:hover, .dark-mode .desencriptar:hover{
     background: #EB5E28;
+    color: #FFFCF2;
   }
   .dark-mode #btn-copiar:hover{
     background: #CCC5B9;
     color: #252422;
   }
-  .dark-mode footer{
-    background: #CCC5B9;
-    color: #252422;
-    font-weight: 600;
+  .dark-mode footer, .dark-mode footer p{
+    background: #353432;
+    color: #CCC5B9;
   }
+  /***  FIM DO MODO ESCURO  ***/
 
   @media only screen and (min-width: 1024px) and (max-width: 1300px){
     .encriptar, .desencriptar{
@@ -332,19 +338,18 @@ main{
       font-size: 20px;
     }
     .encriptar, .desencriptar{
-      margin: 0px auto;
+      margin: 5px auto;
     }
     .botoes{
       margin: 0px auto;
       text-align: center;
     }
-    footer{
-      position: relative;
-      bottom: 0px;
+    .footer-logo{
+      width: 40px;
     }
   }
 
-  @media only screen and (min-device-width : 300px) and (max-device-width : 480px){
+  @media only screen and (min-device-width : 280px) and (max-device-width : 480px){
     .texto-box{
       width: 100%;
     }
@@ -357,14 +362,14 @@ main{
       font-size: 20px;
     }
     .encriptar, .desencriptar{
-      margin: 0px auto;
+      margin: 5px auto;
+      width: 100%;
     }
     .botoes{
       margin: 0px auto;
       text-align: center;
     }
-    footer{
-      position: relative;
-      bottom: -2px;
+    .footer-logo{
+      width: 40px;
     }
   }
