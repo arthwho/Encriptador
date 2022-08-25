@@ -1,6 +1,8 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
-const aviso = document.querySelector("#aviso-texto")
+const aviso = document.querySelector("#aviso-texto");
+
+document.getElementById("aparece").style.display = 'none';
 
 function copiar(){
     copyText = document.getElementById("mensagem");
@@ -53,6 +55,7 @@ function inputVerifica(){
     else{
         aviso.style.color = 'black';
         document.getElementById("desaparece").style.display = 'none';
+        document.getElementById("aparece").style.display = 'block';
         return true;
     }
 }
